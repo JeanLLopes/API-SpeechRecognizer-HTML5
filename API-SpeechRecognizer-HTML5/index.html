@@ -1,9 +1,34 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Testando Web Speech API</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+
 </head>
-<body>
+<body class="container">
+    <h3 class="text-center text-uppercase">Testando a API SpeechRecognition do HTML5</h3>
+    <br />
+    <section id="sectionSpeech">
+        <section id="sectionAlerts" class="hidden">
+            <div class="alert alert-danger">
+                <p>O que você falou está abaixo:</p>
+                <p id="transcription"></p>
+            </div>
+            <div class="alert alert-info">
+                <p>Informações da Taxa de acerto:</p>
+                <p id="taxa"></p>
+            </div>
+            <br />
+        </section>
+        <button id="rect" class="btn btn-info">Iniciar Gravação</button>
+    </section>
+    <br />
+    <span id="unsupported" class="hidden">API SpeechRecognizer não é suportada pelo navegador</span>
+
+    <script src="Scripts/scriptMain.js" type="text/javascript"></script>
 
 </body>
 </html>
